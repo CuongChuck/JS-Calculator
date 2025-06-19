@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.input-bar {
+    grid-column: 1 / 5;
+    padding: 10px 0px;
+    color: gray;
+    font-size: medium;
+}
+
+div {
+    border: 5px solid brown;
+    border-radius: 10px;
+}
+
+div:not(.calculator) {
+    background-color: burlywood;
+}
+
+.button {
+    color: blue;
+    padding: 10px 20px;
+    margin-inline: 2px;
+    margin-block: 2px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
